@@ -189,6 +189,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IRadioConfig</name>
             <instance>default</instance>
         </interface>
+        <interface>
+            <name>ISensorManager</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <!--UICC secure element -->
    <hal format="hidl">
