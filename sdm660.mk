@@ -643,3 +643,13 @@ PRODUCT_PACKAGES += \
 # Octavi-OS
 PRODUCT_PACKAGES += \
     CustomDoze
+
+# XiaomiParts
+$(call inherit-product-if-exists, vendor/xiaomi/XiaomiParts/xiaomiparts.mk)
+
+PRODUCT_PACKAGES += \
+  init.xiaomiparts.rc \
+  init.parallax.rc \
+  init.parallax.sh \
+  init.blur.rc \
+  init.blur.sh
