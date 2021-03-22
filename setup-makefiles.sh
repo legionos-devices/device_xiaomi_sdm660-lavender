@@ -32,6 +32,7 @@ fi
 ROOT="$COMMON_DIR"/../../..
 
 HELPER="$ROOT"/tools/extract-utils/extract_utils.sh
+
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
