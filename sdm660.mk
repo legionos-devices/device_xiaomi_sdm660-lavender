@@ -653,3 +653,6 @@ PRODUCT_PACKAGES += \
   init.parallax.sh \
   init.blur.rc \
   init.blur.sh
+
+# Dirac
+$(call inherit-product-if-exists, vendor/xiaomi/dirac/dirac.mk)
