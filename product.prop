@@ -2,9 +2,8 @@
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=7
 
-# Blur
-ro.sf.blurs_are_expensive=1
-ro.surface_flinger.supports_background_blur=1
+# Apex
+ro.apex.updatable=true
 
 # Fling
 ro.min.fling_velocity=160
@@ -13,6 +12,7 @@ ro.max.fling_velocity=20000
 # GMS
 ro.com.google.clientidbase.ms=android-xiaomi-rev2
 ro.com.google.clientidbase=android-xiaomi
+ro.com.google.ime.kb_pad_port_b=1
 ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
 ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
 ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
@@ -23,7 +23,15 @@ ro.setupwizard.rotation_locked=true
 ro.config.bt_sco_vol_steps=30
 
 # Gboard
+ro.com.google.ime.corner_key_r=35
+ro.com.google.ime.kb_pad_port_l=7
+ro.com.google.ime.kb_pad_port_r=7
+ro.com.google.ime.kb_pad_land_l=14
+ro.com.google.ime.kb_pad_land_r=14
 ro.com.google.ime.kb_pad_port_b=1
+ro.com.google.ime.theme_id=5
+ro.com.google.ime.bs_theme=true
+ro.com.google.ime.system_lm_dir=/product/usr/share/ime/google/d3_lms
 
 # Graphics
 ro.hardware.egl=adreno
@@ -45,6 +53,10 @@ ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=100
 ro.lmk.use_minfree_levels=true
 
+# Octavi
+ro.octavi.status=2.1 OFFICIAL
+ro.octavi.maintainer=CHRISL7
+
 # OEM Unlock reporting
 ro.oem_unlock_supported=1
 
@@ -55,9 +67,20 @@ ro.build.selinux=1
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_virtual_display_dimension=4096
+ro.surface_flinger.vsync_event_phase_offset_ns=2000000
+ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
+ro.surface_flinger.set_display_power_timer_ms=10000
+ro.surface_flinger.set_touch_timer_ms=5000
+ro.surface_flinger.set_idle_timer_ms=9000
+ro.surface_flinger.protected_contents=true
+ro.surface_flinger.use_smart_90_for_video=true 
+ro.surface_flinger.wcg_composition_dataspace=143261696
 
 #Storaged
 ro.storaged.event.interval=99999
+
+# Zygote preforking
+persist.device_config.runtime_native.usap_pool_enabled=true
 
 # ZRAM
 ro.zram.mark_idle_delay_mins=60
